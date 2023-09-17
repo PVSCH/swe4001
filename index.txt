@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .dropdown a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li class="dropdown">
+    <a href="#home" class="dropbtn">HOME</a>
+    <div class="dropdown-content">
+        <a href="#">STUDENT  & PROFESSOR LOGIN PAGE</a>
+      </div>
+    </li>
+  <li class="dropdown">
+    <a href="#home" class="dropbtn">ACADEMICS</a>
+    <div class="dropdown-content">
+        <a href="#">OVERVIEW</a>
+        <a href="#">SCHOOLS</a>
+        <a href="#">FACULTY</a>
+        <a href="#">ACADEMIC CALENDER</a>
+        <a href="#">CENTER OF EXAMINATION</a>
+        <a href="#">ENGINEERING CLINICS</a>
+        <a href="#">INTERNATIONAL COLLOBORATIONS</a>
+      </div>
+    </li>
+  <li class="dropdown">
+    <a href="#home" class="dropbtn">CAREER</a>
+    <div class="dropdown-content">
+        <a href="#">OVERVIEW</a>
+        <a href="#">SUPER DREAM OFFERS</a>
+        <a href="#">DREAM OFFERS</a>
+        <a href="#">INTERNSHIP</a>
+        
+      </div>
+    </li>
+  <li class="dropdown">
+    <a href="#home" class="dropbtn">FACILITIES</a>
+    <div class="dropdown-content">
+        <a href="#">INFRASTRUCTURE</a>
+        <a href="#">HOSTELS</a>
+        <a href="#">LIBRARY</a>
+        <a href="#">VIT-AP-LABS</a>
+        <a href="#">BANK AND ATMS</a>
+        <a href="#">TRANSPORT</a>
+      </div>
+    </li>
+  <li class="dropdown">
+    <a href="#home" class="dropbtn">CAMPUS</a>
+    <div class="dropdown-content">
+        <a href="#">OVERVIEW</a>
+        <a href="#">CLUBS & CHAPTERS</a>
+        <a href="#">CELEBRATIONS</a>
+        <a href="#">SPORTS</a>
+        <a href="#">GALLERY</a>
+        <a href="#">CAMOUS TOUR</a>
+      </div>
+    </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">ADMISSIONS</a>
+    <div class="dropdown-content">
+      <a href="#">APPPLICATION PROCESS</a>
+      <a href="#">M.TECH</a>
+      <a href="#">B.TECH</a>
+      <a href="#">BBA</a>
+      <a href="#">LAW</a>
+      <a href="#">M.SC.</a>
+      <a href="#">B.COM</a>
+      <a href="#">B.A-M.A</a>
+      <a href="#">PH.D</a>
+      <a href="#">B.A-M.A</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">ABOUT US</a>
+    <div class="dropdown-content">
+      <a href="#">OVERVIEW</a>
+      <a href="#">LEADERSHIP</a>
+      <a href="#">VISION & MISSION</a>
+      <a href="#">CONTACT US</a>
+    </div>
+  </li>
+</ul>
+
+<div class="header">
+    <h1>My Website</h1>
+    <p>Resize the browser window to see the effect.</p>
+  </div>
+  
+ 
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5> type anything</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <div class="fakeimg" style="height:100px;">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg"><p>Image</p></div>
+        <div class="fakeimg"><p>Image</p></div>
+        <div class="fakeimg"><p>Image</p></div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+
+
+</body>
+</html>
+
+
